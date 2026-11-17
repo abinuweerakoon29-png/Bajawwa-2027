@@ -1,0 +1,19 @@
+BAJAWWA 2027 — සකස් කිරීමේ පියවර
+
+මෙය live website එකක් බවට පත් කිරීමට අවශ්‍ය source project එකයි. ZIP එක තනිවම public link එකක් හදන්නේ නැහැ.
+
+1) Supabase (supabase.com) ගිණුමක් සාදා New project එකක් සාදන්න.
+2) SQL Editor එකට ගොස් supabase-schema.sql ගොනුවේ සියලුම SQL run කරන්න.
+3) Authentication > URL Configuration හි ඔබේ අවසාන website URL එක Site URL ලෙස දාන්න.
+4) Authentication > Providers හි Email OTP සක්‍රීය කරන්න. Authentication > Users තුළ abinuweerakoon29@gmail.com user එක invite/create කරන්න. Public sign-ups අක්‍රිය කරන්න.
+5) Project Settings > API වෙතින් Project URL සහ anon/public key ලබාගන්න. Service role key කිසිවිටෙක browser එකට දාන්න එපා.
+6) public/config.js තුළ YOUR_SUPABASE_PROJECT_URL සහ YOUR_SUPABASE_ANON_KEY වෙනුවට ඒ අගයන් දාන්න.
+7) මෙම project එක Netlify හෝ Vercel වෙත deploy කරන්න (Build command: npm run build; publish/output folder: dist). Deploy කළ පසු ලැබෙන public URL එක තමයි Booking Link එක.
+8) එම URL එකේ /# (එකම පිටුව) Admin Login බොත්තමෙන් email sign-in link එක ඉල්ලන්න. එය abinuweerakoon29@gmail.com වෙත යවනු ඇත.
+
+වැදගත්:
+- මේ project එක booking request එකක් පමණක් සුරකියි. Visa/Mastercard හෝ LankaQR හරහා සැබෑ online payment එකක් මෙහි තවම සම්බන්ධ කර නැහැ.
+- Payment gateway එකක් ලබාගැනීමට ශ්‍රී ලංකාවේ payment provider/merchant account එකක් සහ ඔවුන්ගේ server-side integration අවශ්‍යයි. Card details මෙම website එකට ඇතුළත් නොකරන්න.
+- දැනට booking එක Pending payment ලෙස සටහන් වේ. මුදල් ලැබුණු බව තහවුරු කර ticket එක manually confirm කරන්න.
+- Admin email එක database policy එකෙන් පමණක් bookings බලන්න අවසර ලබයි. Hosting account සහ Supabase project එක ඔබගේම ගිණුම්වල තබාගන්න.
+- Event details: BAJAWWA / 2025 OL Batch / 04 Jan 2027 / Sundara Hotel / 10:00 AM–4:30 PM / LKR 4,500 / capacity 150.
